@@ -11,7 +11,7 @@
 
 #include "MPlayer_BasicVersionDoc.h"
 #include "MPlayer_BasicVersionView.h"
-
+#include"SONGLIST.h"
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #endif
@@ -26,6 +26,7 @@ BEGIN_MESSAGE_MAP(CMPlayerBasicVersionApp, CWinAppEx)
 	ON_COMMAND(ID_FILE_OPEN, &CWinAppEx::OnFileOpen)
 	// 标准打印设置命令
 	ON_COMMAND(ID_FILE_PRINT_SETUP, &CWinAppEx::OnFilePrintSetup)
+	ON_COMMAND(ID_32777, &CMPlayerBasicVersionApp::openlist)
 END_MESSAGE_MAP()
 
 
@@ -61,6 +62,7 @@ CMPlayerBasicVersionApp theApp;
 
 BOOL CMPlayerBasicVersionApp::InitInstance()
 {
+	
 	// 如果一个运行在 Windows XP 上的应用程序清单指定要
 	// 使用 ComCtl32.dll 版本 6 或更高版本来启用可视化方式，
 	//则需要 InitCommonControlsEx()。  否则，将无法创建窗口。
@@ -136,6 +138,7 @@ BOOL CMPlayerBasicVersionApp::InitInstance()
 	// 唯一的一个窗口已初始化，因此显示它并对其进行更新
 	m_pMainWnd->ShowWindow(SW_SHOW);
 	m_pMainWnd->UpdateWindow();
+	gedan.Create(IDD_SONGLIST);
 	return TRUE;
 }
 
@@ -216,7 +219,9 @@ void CMPlayerBasicVersionApp::SaveCustomState()
 
 // CMPlayerBasicVersionApp 消息处理程序
 
-
-
-
-
+void CMPlayerBasicVersionApp::openlist()
+{
+	gedan.ShowWindow(SW_SHOWNORMAL);
+	
+	// TODO: 在此添加命令处理程序代码
+}

@@ -53,7 +53,7 @@ private:
 	CButton* P_ButtonPlay;			//播放按钮的指针
 	CString* m_PathOfMusicDoc;		//添加歌曲文件时的路径
 //	CString* m_NameOfMusicDoc;		//歌曲文件名
-	CString NameOfFileFolder;
+	CString NameOfFileFolder;       //存储文件夹路径
 public:
 	afx_msg void OnAddFileFolder();
 };

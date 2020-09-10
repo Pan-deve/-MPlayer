@@ -54,6 +54,12 @@
     <ClInclude Include="pch.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="SONGLIST.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TabSheet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MPlayer_BasicVersion.cpp">
@@ -84,6 +90,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SONGLIST.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TabSheet.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -166,6 +178,15 @@
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="res\Toolbar256.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\maple green.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\maple red.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\maple.png">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>

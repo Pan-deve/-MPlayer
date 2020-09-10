@@ -8,7 +8,7 @@
 #endif
 
 #include "resource.h"       // 主符号
-
+#include"SONGLIST.h"
 
 // CMPlayerBasicVersionApp:
 // 有关此类的实现，请参阅 MPlayer_BasicVersion.cpp
@@ -18,7 +18,7 @@ class CMPlayerBasicVersionApp : public CWinAppEx
 {
 public:
 	CMPlayerBasicVersionApp() noexcept;
-
+	SONGLIST gedan;
 
 // 重写
 public:
@@ -35,6 +35,7 @@ public:
 
 	afx_msg void OnAppAbout();
 	DECLARE_MESSAGE_MAP()
+	afx_msg void openlist();
 };
 
 extern CMPlayerBasicVersionApp theApp;
