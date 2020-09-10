@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
-// Microsoft Visual C++ Éú³ÉµÄ°üº¬ÎÄ¼ş¡£
-// ¹© MPlayerBasicVersion.rc Ê¹ÓÃ
+// Microsoft Visual C++ ç”Ÿæˆçš„åŒ…å«æ–‡ä»¶ã€‚
+// ä¾› MPlayerBasicVersion.rc ä½¿ç”¨
 //
 #define IDD_ABOUTBOX                    100
 #define IDP_OLE_INIT_FAILED             100
@@ -92,11 +92,6 @@
 #define IDC_TUICHU                      1004
 #define ID_32771                        32771
 #define ID_32772                        32772
-#define ID_32773                        32773
-#define ID_32774                        32774
-#define ID_32775                        32775
-#define ID_32776                        32776
-#define ID_32777                        32777
 
 // Next default values for new objects
 // 
